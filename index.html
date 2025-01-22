@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Background App</title>
+    <link rel="stylesheet" href="assets/globals.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <!-- Link to Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Your existing CSS remains unchanged */
+    </style>
+  </head>
+  <body>
+    <div class="overlay" id="weather-overlay">
+      <h1>See the Weather</h1>
+      <p id="weather-description">Enter a city to get started!</p>
+      <p id="weather-temp"></p>
+    </div>
+
+    <form class="search" id="search-form">
+      <input type="text" id="city-input" placeholder="Enter city name" />
+      <button type="submit">Search</button>
+    </form>
+
+    <script type="module" src="assets/eventListeners.js"></script>
+  </body>
+</html>
