@@ -1,13 +1,14 @@
+/* globals.css */
+/* Keyframe Animation */
 @keyframes fade-in {
   to {
     opacity: 1;
   }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+/* Global Styles */
+* {
+  box-sizing: border-box;
 }
 
 :root {
@@ -21,31 +22,14 @@
 html,
 body {
   height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #eddede;
   background: url("https://images.unsplash.com/photo-1628498188873-579210ce622e?q=80&w=2268&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     center center no-repeat;
-
-  background-size: cover; /* Ensures the background covers the entire screen */
-  height: 100%;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  color: #eddede;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-  transition: 1s background-color;
-
+  background-size: cover;
+  transition: background-color 1s;
   overflow: hidden;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
-  background: center center no-repeat;
-  background-size: contain;
-  color: #eddede;
 }
 
 a {
@@ -53,15 +37,44 @@ a {
   text-decoration: none;
 }
 
-/* global.css */
+/* Media Queries */
+@media (min-width: 768px) {
+  .overlay h1 {
+    font-size: 30px;
+  }
 
-/* Set the background image for the default screen (starry night) */
-body {
-  background: url("https://source.unsplash.com/1600x900/?starry-night") center
-    center no-repeat;
-  background-size: cover;
-  height: 100%;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  color: #eddede;
+  .overlay p {
+    font-size: 20px;
+  }
+
+  #search-form {
+    gap: 15px;
+  }
+
+  #search-form input {
+    font-size: 18px;
+  }
+
+  #search-form button {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .overlay h1 {
+    font-size: 3.5rem;
+  }
+
+  .overlay p {
+    font-size: 1.8rem;
+  }
+
+  #search-form {
+    width: 40%;
+  }
+
+  #search-form input,
+  #search-form button {
+    width: 100%;
+  }
 }
