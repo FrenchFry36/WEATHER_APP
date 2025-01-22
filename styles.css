@@ -356,3 +356,21 @@
     width: 100%; /* Full width input and button */
   }
 }
+
+@media (max-width: 600px) {
+  #search-form {
+    flex-direction: column; /* Stack input and button vertically */
+    width: 80%; /* Make it take most of the screen width */
+    bottom: 20px; /* Adjust vertical position */
+  }
+
+  #search-form input,
+  #search-form button {
+    width: 100%; /* Make input and button full width */
+    margin-bottom: 10px; /* Add spacing between input and button */
+  }
+
+  #search-form button {
+    margin-bottom: 0; /* Remove margin for the last element */
+  }
+}
