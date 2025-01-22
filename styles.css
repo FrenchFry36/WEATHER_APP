@@ -147,3 +147,21 @@
     width: 100%; /* Makes them responsive */
   }
 }
+.footer {
+  display: flex;
+  justify-content: center; /* Centers the text horizontally */
+  align-items: center; /* Centers the text vertically */
+  padding: 10px 20px;
+  color: white; /* Text color */
+  font-size: 14px;
+  text-align: center;
+  position: fixed; /* Ensures it stays at the bottom */
+  bottom: 0; /* Aligns the footer at the bottom */
+  left: 0; /* Stretches to the left */
+  right: 0; /* Stretches to the right */
+  z-index: 10; /* Ensures it stays above other elements */
+}
+
+.footer p {
+  margin: 0; /* Removes default paragraph margins */
+}
